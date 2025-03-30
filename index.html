@@ -175,6 +175,27 @@ document.getElementById('read-more-btn').addEventListener('click', function() {
             <p>&copy; 2025 HarmonicX Group. All Rights Reserved.</p>
         </footer>
     </div>
+     <script>
+      // Function to toggle the visibility of the full content
+document.getElementById('read-more-btn').addEventListener('click', function() {
+    // Get the full content section
+    const fullContent = document.getElementById('full-content');
+    
+    // Check if the content is hidden
+    if (fullContent.style.display === 'none') {
+        // Show the full content
+        fullContent.style.display = 'block';
+        // Change button text to "Read Less"
+        this.textContent = 'Read Less';
+    } else {
+        // Hide the full content
+        fullContent.style.display = 'none';
+        // Change button text back to "Read More"
+        this.textContent = 'Read More';
+    }
+});
+
+    </script>
 </body>
 </html>
 
